@@ -10,7 +10,7 @@ class Driver(object):
 
     def __init__(self):
         if settings.browser == "chrome":
-            self.driver = webdriver.Chrome("C:\\Users\\wajahat.kamal\\PycharmProjects\\CrossFund\\browsers"
+            self.driver = webdriver.Chrome(executable_path="C:\\Users\\wajahat.kamal\\PycharmProjects\\CrossFund\\browsers"
                                            "\\chromedriver.exe")
         else:
             raise Driver.SeleniumDriverNotFound(
